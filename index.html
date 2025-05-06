@@ -64,10 +64,10 @@
         /* Media Queries */
         @media (max-width: 800px) {
             body {
-                flex-direction: column; /* Stack nav and article vertically */
+                flex-direction: column; 
             }
             nav {
-                position: relative; /* No sticky */
+                position: relative; 
                 height: auto;
                 width: 100%;
                 margin-bottom: 1rem;
@@ -79,20 +79,20 @@
 
         @media (min-width: 801px) and (max-width: 1000px) {
             body {
-                flex-direction: row; /* Horizontal layout */
+                flex-direction: row; 
             }
             nav {
                 position: sticky;
                 top: 0;
                 height: 100vh;
                 width: 220px;
-                order: 2; /* Show nav on right */
+                order: 2;
             }
             article {
-                order: 1; /* Show article on left */
+                order: 1; 
                 margin-left: 0;
-                margin-right: 240px; /* Leave space for nav on right */
-                max-width: none; /* Remove max-width constrain if needed */
+                margin-right: 240px; 
+                max-width: none; 
             }
         }
 
@@ -105,11 +105,10 @@
                 top: 0;
                 height: 100vh;
                 width: 220px;
-                order: 0; /* Default order (left) */
+                order: 0; 
             }
             article {
-                margin-left: 240px; /* Leave space for nav on left */
-                margin-right: 0;
+                margin-left: 240px; 
                 max-width: none;
                 order: 1;
             }
